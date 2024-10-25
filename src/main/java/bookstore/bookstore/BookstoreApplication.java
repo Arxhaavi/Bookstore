@@ -20,8 +20,9 @@ public class BookstoreApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Book book1 = new Book("asd", "Jonas Jonasson", 1991, "12345-12n", 12.3);
-		Book book2 = new Book("dsa", "Koira Kissanen", 2052, "54321-21p", 20005.4);
+		Book book1 = new Book(1L, "asd", "Jonas Jonasson", 1991, "12345-12n", 12.3);
+		Book book2 = new Book(2L, "dsa", "Koira Kissanen", 2052, "54321-21p",
+				25.4);
 
 		bookRepository.save(book1);
 		bookRepository.save(book2);

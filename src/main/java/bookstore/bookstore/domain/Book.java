@@ -17,12 +17,13 @@ public class Book {
     public Book() {
     }
 
-    public Book(String title, String author, Integer publicationYear, String isbn, Double price) {
+    public Book(Long id, String title, String author, Integer publicationYear, String isbn, Double price) {
         this.title = title;
         this.author = author;
         this.publicationYear = publicationYear;
         this.isbn = isbn;
         this.price = price;
+        this.id = id;
     }
 
     public String getTitle() {
@@ -65,7 +66,7 @@ public class Book {
         this.price = price;
     }
 
-    public long getId(Long id) {
+    public long getId() {
         return id;
     }
 
